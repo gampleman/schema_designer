@@ -1,0 +1,19 @@
+
+<div id="chart">
+	<svg width=13000 height=1000>
+	</svg>
+	
+</div>
+
+<div id="bar" style="position: fixed; bottom: 0; width: 100%">
+	<form action="">
+		<!--<label><input type="radio" name="create" checked /> Create</label>
+		<label><input type="radio" /> Modify</label>-->
+		<input type="text" placeholder='Type in migration command here (Format: "table_name column_name:type column_name:type")' />
+	</form>
+	<button id="output">Save Migration</button>
+</div>
+
+<script>
+var INITIAL_DATA = <%= raw parse_schema.to_json %>;
+</script>
