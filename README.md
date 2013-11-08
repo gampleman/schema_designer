@@ -16,7 +16,7 @@ If you use it with an empty application, you will see an empty screen with the c
 
 The command bar accepts syntax similar to the migration generator in rails:
 
-		table_name column_name:column_type column_name:column_type...
+		table_name column_name:column_type column_name[:column_type]...
 		
 The `table_name` will be pluralized automatically. If you ommit the `:column_type`, it will default to `string`. Types should be autocompleted, however you are not limited to the types suggested, you can use any type your database supports. `references` type will create a link to the table of the matching name.
 
